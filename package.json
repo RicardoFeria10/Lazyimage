@@ -3,9 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1",
-    "react-scripts": "2.1.1"
+    "@types/enzyme": "^3.1.15",
+    "@types/enzyme-adapter-react-16": "^1.0.3",
+    "@types/graphql": "^14.0.3",
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.5",
+    "@types/react": "^16.7.2",
+    "@types/react-dom": "^16.0.9",
+    "@types/sinon": "^5.0.5",
+    "apollo-boost": "^0.1.20",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "enzyme-to-json": "^3.3.4",
+    "graphql": "^14.0.2",
+    "graphql-tag": "^2.10.0",
+    "react": "^16.7.0-alpha.0",
+    "react-apollo": "^2.2.4",
+    "react-dom": "^16.7.0-alpha.0",
+    "react-scripts": "2.1.1",
+    "react-test-renderer": "^16.6.1",
+    "sinon": "^7.1.1",
+    "typescript": "^3.1.6"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,6 +33,11 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "browserslist": [
     ">0.2%",
