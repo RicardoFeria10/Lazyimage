@@ -22,8 +22,8 @@ const query = gql`
 const Test = () => {
   <Query query={query}>
     {({ data, loading, error }) => {
-      if (loading) return <span>Loading...</span>;
-      if (error) return <span>{error}</span>;
+      if (loading) { return <span>Loading...</span>; }
+      if (error) { return <span>{error}</span>; }
 
       return (
         <>
